@@ -57,7 +57,7 @@ tailToList seq = go [seq] []
     go (Single x : rest) acc = go rest (x : acc)
     go (Append l r : rest) acc = go (r : l : rest) acc
 
--- 5 (bis). Tail Recursion and Reverse Polish Notation
+-- 6. Tail Recursion and Reverse Polish Notation
 data Token = TNum Int | TAdd | TSub | TMul | TDiv
   deriving (Show, Eq)
 
@@ -75,7 +75,7 @@ tailRPN tokens = go tokens []
       | otherwise = go ts ((x `div` y) : stack)
     go _ _ = Nothing
 
--- 6. Expressing functions via foldr and foldl
+-- 7. Expressing functions via foldr and foldl
 
 -- (a) myReverse
 myReverse :: [a] -> [a]
@@ -105,7 +105,7 @@ traverses the entire list before reducing, so it would hang on an infinite list.
 decimal :: [Int] -> Int
 decimal = foldl (\acc d -> acc * 10 + d) 0
 
--- 7. Run-length encoding via folds
+-- 8. Run-length encoding via folds
 
 -- (a) encode
 encode :: Eq a => [a] -> [(a, Int)]
