@@ -24,11 +24,12 @@ library:
     - UiLayoutLang.Parser
     - UiLayoutLang.Engine
     - UiLayoutLang.Renderer
+  other-modules: []
 
 executables:
   ui-layout-lang:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         src
     dependencies:
       - ui-layout-lang
 
