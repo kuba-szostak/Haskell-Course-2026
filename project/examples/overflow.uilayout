@@ -1,0 +1,9 @@
+// Overflow demonstration: children's widths sum to more than the parent.
+// The engine clamps each child to the remaining space.
+window "Overflow" 400 x 300 {
+  row {
+    box { width: 60%, height: 100%, color: #E74C3C }
+    box { width: 60%, height: 100%, color: #3498DB }
+    box { width: 60%, height: 100%, color: #2ECC71 }
+  }
+}

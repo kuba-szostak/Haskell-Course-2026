@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1024" height="768"
+     viewBox="0 0 1024 768">
+
+  <!-- Background -->
+  <rect width="1024" height="768" fill="#f0f0f0" />
+
+  <rect x="0" y="0" width="1024" height="768" fill="#4A90D9" stroke="#333" stroke-width="1" opacity="0.85" />
+    <rect x="0" y="0" width="1024" height="60" fill="#2C3E50" stroke="#333" stroke-width="1" opacity="0.85" />
+
+    <rect x="0" y="60" width="1024" height="708" fill="#D94A4A" stroke="#333" stroke-width="1" opacity="0.85" />
+      <rect x="0" y="60" width="250" height="708" fill="#34495E" stroke="#333" stroke-width="1" opacity="0.85" />
+
+      <rect x="250" y="60" width="774" height="708" fill="#4AD97A" stroke="#333" stroke-width="1" opacity="0.85" />
+        <rect x="250" y="60" width="774" height="354" fill="#3498DB" stroke="#333" stroke-width="1" opacity="0.85" />
+
+        <rect x="250" y="414" width="774" height="354" fill="#2ECC71" stroke="#333" stroke-width="1" opacity="0.85" />
+
+
+
+
+</svg>

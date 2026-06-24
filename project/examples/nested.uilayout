@@ -1,0 +1,21 @@
+// Nested layout: a top-level column splits into a header and body.
+// The body is a row with a sidebar and main content area.
+// The main content area itself contains two stacked sections.
+window "Dashboard" 1024 x 768 {
+  col {
+    // Header bar
+    box { width: 100%, height: 60px, color: #2C3E50 }
+
+    // Body: sidebar + main content
+    row {
+      // Left sidebar
+      box { width: 250px, height: 100%, color: #34495E }
+
+      // Main content with two stacked panels
+      col {
+        box { width: 100%, height: 50%, color: #3498DB }
+        box { width: 100%, height: 50%, color: #2ECC71 }
+      }
+    }
+  }
+}

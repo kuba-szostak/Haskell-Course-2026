@@ -1,0 +1,46 @@
+name:                ui-layout-lang
+version:             0.1.0.0
+synopsis:            A declarative UI layout DSL and engine
+description:         UiLayoutLang is a small declarative language for describing UI layouts
+                     as nested boxes. Programs declare a tree of boxes with size and direction
+                     properties; the engine computes the absolute position and size of every
+                     box for a given window size.
+author:              Kuba Szostak
+license:             MIT
+
+ghc-options:
+  - -Wall
+
+dependencies:
+  - base >= 4.7 && < 5
+  - megaparsec >= 9.0
+  - text
+  - containers
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - UiLayoutLang.Types
+    - UiLayoutLang.Parser
+    - UiLayoutLang.Engine
+    - UiLayoutLang.Renderer
+
+executables:
+  ui-layout-lang:
+    main:                Main.hs
+    source-dirs:         app
+    dependencies:
+      - ui-layout-lang
+
+tests:
+  ui-layout-lang-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+      - ui-layout-lang
+      - hspec
+      - QuickCheck
+      - megaparsec
+      - text
+    build-tools:
+      - hspec-discover

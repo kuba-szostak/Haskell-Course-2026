@@ -1,0 +1,8 @@
+// Simple two-column layout from the project specification.
+// Left sidebar (20%) and main content area (80%).
+window "Main" 800 x 600 {
+  row {
+    box { width: 20%, height: 100%, color: red }
+    box { width: 80%, height: 100%, color: blue }
+  }
+}
